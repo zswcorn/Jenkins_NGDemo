@@ -15,7 +15,8 @@ pipeline {
         }
         stage('Build First') {
             steps {
-                echo 'Build First...'
+                echo 'Try Building...'
+                sh 'npm run build'
             }
         }
         stage('Then Test') {
